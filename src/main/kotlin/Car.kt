@@ -1,4 +1,4 @@
-class Car(val model: String, val year: Int, val color: String, val fuelType: String) {
+class Car(val model: String, val year: Int, val color: String) {
     fun isCarsTheSame(firstCar: Car, secondCar: Car) {
         println("Это одна и та же машина: " + firstCar.equals(secondCar))
     }
