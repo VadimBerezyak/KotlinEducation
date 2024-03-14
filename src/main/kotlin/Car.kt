@@ -1,6 +1,8 @@
-class Car(val model: String, val year: Int, val color: String) {
+data class Car(val model: String, val year: Int, val color: String) {
     fun isCarsTheSame(firstCar: Car, secondCar: Car) {
-        println("Это одна и та же машина: " + firstCar.equals(secondCar))
+       // val result = if (firstCar.hashCode().equals(secondCar.hashCode())) true else false
+
+        println("Это одна и та же машина: " + (firstCar.hashCode().equals(secondCar.hashCode())))
     }
 
     fun isCarsSimilar(firstCar: Car, secondCar: Car) {
