@@ -1,21 +1,22 @@
-data class Car(val model: String, val year: Int, val color: String) {
+class Car(val model: String,
+          val year: Int,
+          val color: String) {
     fun isCarsTheSame(firstCar: Car, secondCar: Car) {
        // val result = if (firstCar.hashCode().equals(secondCar.hashCode())) true else false
-
-        println("Это одна и та же машина: " + (firstCar.hashCode().equals(secondCar.hashCode())))
+        println("Это одна и та же машина: " + (firstCar.hashCode() == secondCar.hashCode()))
     }
 
     fun isCarsSimilar(firstCar: Car, secondCar: Car) {
-        val result: Boolean
+        val areCarsSimilar: Boolean
         if (
             (firstCar.year == secondCar.year) &&
             (firstCar.model == secondCar.model) &&
             (firstCar.color == secondCar.color)
         ) {
-            result = true
+            areCarsSimilar = true
         } else {
-            result = false
+            areCarsSimilar = false
         }
-        println("Машины одинаковы по техническим характеристикам: $result")
+        println("Машины одинаковы по техническим характеристикам: $areCarsSimilar")
     }
 }
