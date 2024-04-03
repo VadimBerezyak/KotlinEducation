@@ -1,8 +1,11 @@
 data class Rectangle(val pointUpLeft: Point, val pointDownRight: Point ) {
-    fun squareOfRectangle () : Float {
-        return (pointUpLeft.x - pointDownRight.x)*(pointDownRight.y-pointUpLeft.y)
+    fun squareOfRectangle(): Float {
+        return (pointDownRight.x - pointUpLeft.x) * (pointUpLeft.y - pointDownRight.y)
+
+    }
+    fun perimeterOfRectangle(): Float {
+        return ((pointDownRight.x - pointUpLeft.x) + (pointUpLeft.y - pointDownRight.y))*2
     }
 }
-
 //учитывать тип результата при чущественном увеличении значения Int -> Long
 
