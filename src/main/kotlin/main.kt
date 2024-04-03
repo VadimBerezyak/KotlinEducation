@@ -1,6 +1,6 @@
 fun main() {
-        val firstCar = Car(model = "VAZ", year = 2023, color = "White")
-        val secondCar = Car(model = "VAZ", year = 2023, color = "White")
+        val firstCar = Car(model = "VAZ", year = 2023, color = Color.RED, luxVersion = true)
+        val secondCar = Car(model = "VAZ", year = 2023, color = Color.YELLOW, luxVersion = true)
         firstCar.isCarsTheSame(firstCar, secondCar)
         secondCar.isCarsSimilar(firstCar, secondCar)
 

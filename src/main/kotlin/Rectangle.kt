@@ -7,5 +7,4 @@ data class Rectangle(val pointUpLeft: Point, val pointDownRight: Point ) {
         return ((pointDownRight.x - pointUpLeft.x) + (pointUpLeft.y - pointDownRight.y))*2
     }
 }
-//учитывать тип результата при чущественном увеличении значения Int -> Long
 
