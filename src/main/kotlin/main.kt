@@ -1,11 +1,10 @@
 fun main() {
         val firstCar = Car(model = "VAZ", year = 2023, color = Color.RED, luxVersion = true)
         val secondCar = Car(model = "VAZ", year = 2023, color = Color.YELLOW, luxVersion = true)
-        firstCar.isCarsTheSame(firstCar, secondCar)
-        secondCar.isCarsSimilar(firstCar, secondCar)
 
-    println(firstCar)
-    println(firstCar.hashCode())
+
+    println(firstCar.isCarsSimilar(secondCar))
+    println(firstCar.isCarsTheSame(secondCar))
     println(secondCar.hashCode())
     println(secondCar)
 
@@ -16,5 +15,6 @@ fun main() {
     println(p1.distance(p2))
     println(rectangle.squareOfRectangle())
     println(rectangle.perimeterOfRectangle())
+
     }
 
